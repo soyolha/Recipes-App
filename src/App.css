@@ -12,7 +12,14 @@ body{
 }
 .container{
     display: flex;
-    justify-content: center;  
+    flex-direction: column;
+    align-items: center;
+}
+.search-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
 }
 h1,h2,ul {
     font-family: "Open Sans", sans-serif;

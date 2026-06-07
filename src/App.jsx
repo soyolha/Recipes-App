@@ -34,21 +34,15 @@ setWordSubmitted(mySearch)
   <div className='App'> 
     <div className='container'>  
       <img src="tomato.avif" alt="tomato" className='cover'/>
-     </div>
-    <div className='container'>
        <h1>Find Your Favorite Recipe</h1>
-    </div>
-      <div className='container'>
-    <form onSubmit={finalSearch}>
+    <form onSubmit={finalSearch} className='search-form'>
       <input className='search'
          placeholder='Search...'
          onChange={myRecipeSearch}
          value={mySearch}>
       </input>
-    </form>
-    </div>
-    <div className='container'>
        <button>Click here</button>
+    </form>
     </div>
     {myRecipes.map((element, index) => (
       <MyRecipesComponent
